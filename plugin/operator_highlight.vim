@@ -29,6 +29,7 @@ call s:IgnoreFiletypeIfNotSet('tex')
 call s:IgnoreFiletypeIfNotSet('qf')
 call s:IgnoreFiletypeIfNotSet('sh')
 call s:IgnoreFiletypeIfNotSet('text')
+call s:IgnoreFiletypeIfNotSet('org')
 
 fun! s:HighlightOperators()
   if get( g:ophigh_filetypes_to_ignore, &filetype, 0 )
