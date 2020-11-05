@@ -30,6 +30,8 @@ call s:IgnoreFiletypeIfNotSet('qf')
 call s:IgnoreFiletypeIfNotSet('sh')
 call s:IgnoreFiletypeIfNotSet('text')
 call s:IgnoreFiletypeIfNotSet('org')
+call s:IgnoreFiletypeIfNotSet('note')
+call s:IgnoreFiletypeIfNotSet('habits')
 
 fun! s:HighlightOperators()
   if get( g:ophigh_filetypes_to_ignore, &filetype, 0 )
