@@ -38,7 +38,7 @@ fun! s:HighlightOperators()
     return
   endif
   syntax match OperatorChars "?\|+\|-\|\*\|<\|>\|&\||\|!\|\~\|%\|=\|/\(/\|*\)\@!"
-	exec "hi OperatorChars ctermfg=" . g:ophigh_color . " cterm=NONE"
+	exec "hi OperatorChars ctermfg=" . g:opctermfg . " cterm=NONE ctermbg=NONE gui=NONE guifg=" . g:opguifg . " guibg=NONE"
 endfunction
 
 au Syntax * call s:HighlightOperators()
